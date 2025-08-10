@@ -14,6 +14,6 @@ document.getElementById('button-login').addEventListener('click', function(event
         window.location.href = "account.html";
     }
     else{
-        alert("Kiccu tik nai")
+        alert("Faild! Enter Your Number or Password")
     }
 })
