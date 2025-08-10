@@ -31,18 +31,19 @@
                         <button id="admoney-btn" class="btn btn-lg">Add Money</button>
 
                         <!-- Cashout Money Button -->
-                        <button class="btn btn-lg">Cash Out </button>
+                        <button id="cashout-btn" class="btn btn-lg">Cash Out </button>
                     </div>
 
                     <div class="divider"></div>
                     
                     <!-- Add Balance  -->
-                      <form class="card-body">
+                    <div id="admoney-form" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl" >
+                        <form class="card-body">
                             <div class="form-control">
                             <label class="label">
                                 <span class="label-text">Enter Amount  </span>
                             </label>
-                            <input id="input-Admoney" type="number" placeholder="Enter your Amount " class="input input-bordered" required />
+                            <input id="input-Admoney" type="text" placeholder="Enter your Amount " class="input input-bordered" required />
                             </div>
                             <div class="form-control">
                             <label class="label">
@@ -55,6 +56,29 @@
                                 <button id="btn-login" class="btn btn-primary">Login</button>
                             </div>
                         </form >
+                    </div>
+
+                    <div id="cashout-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl" >
+                        <form class="card-body">
+                            <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Enter Cashout Amount</span>
+                            </label>
+                            <input id="input-Cashout-value" type="text" placeholder="Enter your Amount " class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Password</span>
+                            </label>
+                            <input id="Cashout-pass" type="password" placeholder="password" class="input input-bordered" required />
+                            
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="btn-cashout" class="btn btn-primary">Cashout</button>
+                            </div>
+                        </form >
+                    </div>
+                      
                        
                         
                          <!-- <form class="card-body">
@@ -81,6 +105,8 @@
     </main>
 
 
-    <script src="js/account.js"></script>
+    <script src="js/admoney.js"></script>
+    <script src="js/cashout.js"></script>
+    <script src="js/feature.js"></script>
 </body>
 </html>

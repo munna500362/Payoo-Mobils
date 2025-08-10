@@ -6,7 +6,7 @@ document.getElementById('btn-login').addEventListener('click', function(event){
         
     const AdmoneyPassword = document.getElementById('Admoney-pass').value;
         AdmoneyNumberPass= parseFloat(AdmoneyPassword);
-        console.log(typeof AdmoneyNumberPass);
+        // console.log(typeof AdmoneyNumberPass);
     
 
     if(AdmoneyPassword === '12345'){
@@ -16,13 +16,12 @@ document.getElementById('btn-login').addEventListener('click', function(event){
 
         NewBalance = CurentMoney + AdmoneyNumber;
         
-       
-        console.log(NewBalance);
+        document.getElementById('Amount-number').innerText = NewBalance;
 
     }
 
     else{
-        alert("Wrong Password");
+        alert("Faild to Admoney. Please try again");
     }
     
 })
